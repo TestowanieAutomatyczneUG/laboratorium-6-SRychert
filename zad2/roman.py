@@ -6,7 +6,7 @@ def roman(number: int) -> str:
             "IX": 9, "V": 5, "IV": 4,
             "I": 1}
 
-    for symbol, value in dict:
+    for symbol, value in dict.items():
         while number >= value:
             result += symbol
             number -= value
