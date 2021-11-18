@@ -38,11 +38,11 @@ class SongTest(unittest.TestCase):
                           ))
 
     def test_Get_Wrong_Order(self):
-        self.assertEqual(self.temp.getSong(6, 1), "")
+        self.assertRaises(Exception, self.temp.getSong, 6, 1)
 
     def test_Get_Same_Values(self):
         self.assertEqual(self.temp.getSong(5, 5),
-                         "On the fifth day of Christmas my true love gave to me: five Gold Rings, four Calling Birds, three French Hens, two Turtle Doves, and a Partridge in a Pear Tree.\n\n")
+                         "On the fifth day of Christmas my true love gave to me: five Gold Rings, four Calling Birds, three French Hens, two Turtle Doves, and a Partridge in a Pear Tree.")
 
     def test_Get_Negative(self):
         self.assertRaises(Exception, self.temp.getSong, -5)
