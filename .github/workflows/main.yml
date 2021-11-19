@@ -26,6 +26,6 @@ jobs:
       - name: "Run tests for exercise 1"
         run: "python zad1/tests.py"
       - name: "Run tests for exercise 2"
-        run: "python zad2/tests.py"
+        run: "python zad2/tets.py"
       - name: "Run tests for exercise 3"
         run: "python zad3/tests.py"
